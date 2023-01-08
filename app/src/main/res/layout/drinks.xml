@@ -1,0 +1,150 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/beer"
+        android:layout_width="4dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="31dp"
+        android:background="#e6f41d"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/wine"
+        android:layout_width="4dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="131dp"
+        android:background="#ef0b0b"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/alcohol"
+        android:layout_width="4dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="231dp"
+        android:background="#ef2fec"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/water"
+        android:layout_width="4dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="331dp"
+        android:background="#1bdcf9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/beerImg"
+        android:layout_width="83dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:onClick="drinkIncrease"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/beer" />
+
+    <ImageView
+        android:id="@+id/wineImg"
+        android:layout_width="83dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="113dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="drinkIncrease"
+        app:srcCompat="@mipmap/wine" />
+
+    <ImageView
+        android:id="@+id/alcoholImg"
+        android:layout_width="83dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="212dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="drinkIncrease"
+        app:srcCompat="@mipmap/alcohol" />
+
+    <ImageView
+        android:id="@+id/waterImg"
+        android:layout_width="91dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="288dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="drinkIncrease"
+        app:srcCompat="@mipmap/water" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:background="#e5642d"
+        android:text="RESET ALL"
+        android:onClick="reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/beerTxt"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="51dp"
+        android:gravity="center"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/waterTxt"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="45dp"
+        android:gravity="center"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/wineTxt"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/alcoholTxt"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="226dp"
+        android:layout_marginEnd="47dp"
+        android:gravity="center"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

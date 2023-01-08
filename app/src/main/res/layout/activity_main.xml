@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/write"
+        android:layout_width="match_parent"
+        android:layout_height="467dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginBottom="77dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/drink"
+        tools:layout_editor_absoluteY="136dp" />
+
+    <ImageView
+        android:id="@+id/drink"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/write"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_below="@id/drink"
+        android:onClick="goToDrinkPage"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="368dp"
+        android:background="#B3D9FF"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="START"
+        android:textSize="44dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="519dp"></Button>
+
+</RelativeLayout>
